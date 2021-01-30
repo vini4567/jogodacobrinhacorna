@@ -4,7 +4,11 @@ let ctx;
 
 let proxX;
 let proxY;
-
+let tamanhoCobraPadrao = B;
+let tamanhoCobra = tamanhoCobraPadrao;
+let caminhoCobra = [];
+let cobraX = cobraY = 10;
+let comidaX = comidaY = 15;
 window.onload = function () {
     tela = document.getElementById("canvas");
     ctx = tela.getContext("2d");
@@ -32,4 +36,9 @@ function keydownEvent(tecla) {
         proxX = 0;
         proxY = 1;
     }
+}
+
+function desenharJogo() {
+  ctx.fillStyle ="#0ae8fc";
+ctx.fillRect = (0 , 0 ,tela. width, tela. hright);
 }
